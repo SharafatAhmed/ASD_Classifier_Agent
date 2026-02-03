@@ -137,8 +137,8 @@ def handle_user_input(user_input):
             "10. Stares at nothing purposelessly?\n"
             "11. Sex (0=Female, 1=Male)\n\n"
             "Your answers:"
-       )
-         return response
+        ) 
+        return response
     
     # Handle text analysis choice
     if user_input in ["text", "t", "2", "describe", "description"]:
