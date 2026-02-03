@@ -324,21 +324,21 @@ def main():
             """)
         
         with st.expander("📋 Q-CHAT-10 Features"):
-    st.markdown("""
-    **11 Questions (answer in 0=No or 1=Yes):**
+            st.markdown("""
+            **11 Questions (answer in 0=No or 1=Yes):**
     
-    **1**: Does your child use simple gestures? (e.g. wave goodbye)  
-    **2**: Does your child follow where you're looking?  
-    **3**: Does your child pretend? (e.g. care for dolls, talk on a toy phone)  
-    **4**: If you or someone else in the family is visibly upset, does your child show signs of wanting to comfort them?  
-    **5**: Does your child point to share interest with you?  
-    **6**: Does your child look at you when you call his/her name?  
-    **7**: Does your child make easy eye contact?  
-    **8**: Your child's first words are normal?  
-    **9**: Does your child point to indicate that s/he wants something?  
-    **10**: Does your child stare at nothing with no apparent purpose?  
-    **11**: 0=Female, 1=Male
-    """)
+             **1**: Does your child use simple gestures? (e.g. wave goodbye)  
+             **2**: Does your child follow where you're looking?  
+             **3**: Does your child pretend? (e.g. care for dolls, talk on a toy phone)  
+             **4**: If you or someone else in the family is visibly upset, does your child show signs of wanting to comfort them?  
+             **5**: Does your child point to share interest with you?  
+             **6**: Does your child look at you when you call his/her name?  
+             **7**: Does your child make easy eye contact?  
+             **8**: Your child's first words are normal?  
+             **9**: Does your child point to indicate that s/he wants something?  
+            **10**: Does your child stare at nothing with no apparent purpose?  
+            **11**: 0=Female, 1=Male
+            """)
         
         # Disclaimer
         st.markdown("---")
