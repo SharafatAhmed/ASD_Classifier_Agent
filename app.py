@@ -122,18 +122,19 @@ def handle_user_input(user_input):
         response = (
             "📋 **Q-CHAT-10 Questionnaire Selected**\n\n"
             "Please enter 11 comma-separated values (0 or 1):\n"
+            "Here 0 means NO, 1 means Yes"
             "Format: 0,1,0,1,1,0,0,0,1,0,0\n\n"
-            "**Feature order:**\n"
-            "1. A9 - Uses simple gestures\n"
-            "2. A6 - Follows where you're looking\n"
-            "3. A5 - Pretends during play\n"
-            "4. A7 - Comforts upset people\n"
-            "5. A4 - Points to share interest\n"
-            "6. A1 - Looks when name called\n"
-            "7. A2 - Easy eye contact\n"
-            "8. A8 - Normal first words\n"
-            "9. A3 - Points to indicate wants\n"
-            "10. A10 - Stares purposelessly\n"
+            "**Answer The Following Questions:**\n"
+            "1. A9 - Does your child use simple gestures? (e.g. wave goodbye)\n"
+            "2. A6 - Does your child follow where you’re looking?\n"
+            "3. A5 - Does your child pretend? (e.g. care for dolls, talk on a toy phone)\n"
+            "4. A7 - If you or someone else in the family is visibly upset, does your child show signs of wantng to comfort them?\n"
+            "5. A4 - Does your child point to share interest with you?(\n"
+            "6. A1 - Does your child look at you when you call his/her name?\n"
+            "7. A2 - Does your child make easy eye contact?\n"
+            "8. A8 - Your child’s first words are normal?\n"
+            "9. A3 - Does your child point to indicate that s/he wants something?\n"
+            "10. A10 - Does your child stare at nothing with no apparent purpose?\n"
             "11. Sex (0=Female, 1=Male)\n\n"
             "Your answers:"
         )
@@ -302,7 +303,7 @@ def main():
                 st.session_state.messages.append(("assistant", response))
                 st.rerun()
         
-        if st.button("🔄 Reset Chat", type="secondary", use_container_width=True):
+        if st.button("🔄 Clear Chat", type="secondary", use_container_width=True):
             st.session_state.messages = []
             st.session_state.agent_state = {
                 "prediction_type": "none",
@@ -325,18 +326,18 @@ def main():
         
         with st.expander("📋 Q-CHAT-10 Features"):
             st.markdown("""
-            **11 Questions (0=No, 1=Yes):**
-            1. **A9**: Simple gestures
-            2. **A6**: Follows gaze
-            3. **A5**: Pretend play
-            4. **A7**: Comforts when upset
-            5. **A4**: Points to share interest
-            6. **A1**: Responds to name
-            7. **A2**: Eye contact ease
-            8. **A8**: Normal first words
-            9. **A3**: Points to indicate wants
-            10. **A10**: Stares at nothing
-            11. **Sex**: 0=Female, 1=Male
+            **11 Questions (answer in 0=No or 1=Yes):**
+            "1. A9 - Does your child use simple gestures? (e.g. wave goodbye)\n"
+            "2. A6 - Does your child follow where you’re looking?\n"
+            "3. A5 - Does your child pretend? (e.g. care for dolls, talk on a toy phone)\n"
+            "4. A7 - If you or someone else in the family is visibly upset, does your child show signs of wantng to comfort them?\n"
+            "5. A4 - Does your child point to share interest with you?(\n"
+            "6. A1 - Does your child look at you when you call his/her name?\n"
+            "7. A2 - Does your child make easy eye contact?\n"
+            "8. A8 - Your child’s first words are normal?\n"
+            "9. A3 - Does your child point to indicate that s/he wants something?\n"
+            "10. A10 - Does your child stare at nothing with no apparent purpose?\n"
+             11. **Sex**: 0=Female, 1=Male
             """)
         
         # Disclaimer
