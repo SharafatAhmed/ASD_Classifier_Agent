@@ -120,24 +120,25 @@ def handle_user_input(user_input):
         state["awaiting_input"] = True
         
         response = (
-    "📋 **Q-CHAT-10 Questionnaire Selected**\n\n"
-    "Please enter 11 comma-separated values (0 or 1):\n"
-    "Here 0 means NO, 1 means Yes\n"
-    "Format: 0,1,0,1,1,0,0,0,1,0,0\n\n"
-    "**Answer The Following Questions:**\n"
-    "1. Uses simple gestures? (wave goodbye)\n"
-    "2. Follows where you're looking?\n"
-    "3. Pretends during play? (dolls, toy phone)\n"
-    "4. Comforts visibly upset people?\n"
-    "5. Points to share interest?\n"
-    "6. Looks when name is called?\n"
-    "7. Makes easy eye contact?\n"
-    "8. First words were normal?\n"
-    "9. Points to indicate wants?\n"
-    "10. Stares at nothing purposelessly?\n"
-    "11. Sex (0=Female, 1=Male)\n\n"
-    "Your answers:"
-)
+            "📋 **Q-CHAT-10 Questionnaire Selected**\n\n"
+            "Please enter 11 comma-separated values (0 or 1):\n"
+            "Here 0 means NO, 1 means Yes\n"
+            "Format: 0,1,0,1,1,0,0,0,1,0,0\n\n"
+            "**Answer The Following Questions:**\n"
+            "1. Uses simple gestures? (wave goodbye)\n"
+            "2. Follows where you're looking?\n"
+            "3. Pretends during play? (dolls, toy phone)\n"
+            "4. Comforts visibly upset people?\n"
+            "5. Points to share interest?\n"
+            "6. Looks when name is called?\n"
+            "7. Makes easy eye contact?\n"
+            "8. First words were normal?\n"
+            "9. Points to indicate wants?\n"
+            "10. Stares at nothing purposelessly?\n"
+            "11. Sex (0=Female, 1=Male)\n\n"
+            "Your answers:"
+       )
+       return response
     
     # Handle text analysis choice
     if user_input in ["text", "t", "2", "describe", "description"]:
