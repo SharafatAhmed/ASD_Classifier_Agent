@@ -122,7 +122,7 @@ def handle_user_input(user_input):
         response = (
             "📋 **Q-CHAT-10 Questionnaire Selected**\n\n"
             "Please enter 11 comma-separated values (0 or 1):\n"
-            "Here 0 means NO, 1 means Yes\n"
+            "(Here 0 means NO, 1 means Yes) \n"
             "Format: 0,1,0,1,1,0,0,0,1,0,0\n\n"
             "**Answer The Following Questions:**\n"
             "1. Uses simple gestures? (wave goodbye)\n"
